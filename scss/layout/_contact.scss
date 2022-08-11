@@ -1,0 +1,42 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.contact__mail {
+    margin-right: 50px;
+}
+ 
+.contact__link {
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-text-color);
+
+   @include animation(color);
+
+    &:hover .contact-icon,
+    &:focus .contact-icon {
+        fill: var(--acent-color);
+    }
+    
+    &:hover,
+    &:focus {
+        color: var(--acent-color);
+    }
+}
+
+
+.contact-icon {
+    fill: var(--secondary-text-color);
+
+    
+    @include animation(fill);
+}
