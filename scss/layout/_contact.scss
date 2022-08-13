@@ -1,7 +1,12 @@
 .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 } 
 
 .contact__mail {

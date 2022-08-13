@@ -316,8 +316,10 @@ img {
           align-items: center;
 }
 
-.nav {
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 .nav__list {
   display: -webkit-box;
@@ -371,16 +373,10 @@ img {
   border-radius: 2px;
 }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
 }
 
 .contact__mail {
