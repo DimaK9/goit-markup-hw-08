@@ -4,9 +4,6 @@
 }
  
 .advantage-list {
-    text-align: center;
-    justify-content: center;
-
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -27,6 +24,10 @@
         color: var(--main-text-color);
     
         margin-bottom: 10px;
+
+        @media screen and (max-width: 480px) {
+            text-align: center;
+        }
     }
     &__wrap {
         height: 120px;   
@@ -40,9 +41,20 @@
     
 }
 .advantage-list__item {
+    padding-bottom: 60px;
 
-    @media screen and (max-width: 767px) {
-        text-align: center;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        flex-basis: 50%;
+    }
+
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
     }
 }
 

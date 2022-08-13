@@ -3,22 +3,24 @@
     padding-bottom: 94px;
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         font-family: 'Roboto';
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
-    }
 
-    &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
+        @media screen and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 1.17; 
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__logo {
@@ -28,15 +30,37 @@
     }
 }
 
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
 .clietns__name {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;
     color: #AFB1B8;
     border: 1px solid #afb1b8;
     border-radius: 4px; 
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+
+
     
     @include animation(border);
 
