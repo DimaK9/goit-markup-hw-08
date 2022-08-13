@@ -25,6 +25,11 @@
     <header class="header">
       <div class="container header__container">
         <a href="" lang="en" class="header__logo">Web<span class="header__logo--color">Studio</span></a>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button> 
         <nav class="nav">
           <ul class="list nav__list"> 
             <li class="item nav__item">
@@ -329,5 +334,53 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container is-open">
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg class="close-btn__icon" width="40px" height="40px">
+            <use href="./images/icon.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list list">
+          <li class="item mobile-list__item">
+            <a href="./index.html" class="mobile-list__link list"> Студия</a>
+          </li>
+          <li class="item mobile-list__item">
+            <a href="./portfolio.html" class="mobile-list__link list"> Портфолио</a>
+          </li>
+          <li class="item mobile-list__item">
+            <a href="" class="mobile-list__link list"> Контакты</a>
+          </li>
+        </ul>
+        <ul class="list mobile-list">
+          <li class="item  mobile-list__item">
+            <a href="mailto:info@devstudio.com" class="mobile__link--tel list">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="item  mobile-list__item">
+            <a href="tel:+380961111111" class="mobile__link--mail list">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li class="item mobile-socials__item">
+            <a href="" class="link mobile-socials__link list"> Instagram</a>
+          </li>
+          <li class="item mobile-socials__item">
+            <a href="" class="link mobile-socials__link list"> Twitter</a>
+          </li>
+          <li class="item mobile-socials__item">
+            <a href="" class="link mobile-socials__link list"> Facebook</a>
+          </li>
+          <li class="item mobile-socials__item">
+            <a href="" class="link mobile-socials__link list"> Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <script defer src="js/menu.js"></script>
   </body>
 </html>
