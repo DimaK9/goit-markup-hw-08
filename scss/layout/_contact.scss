@@ -1,12 +1,14 @@
 .contact {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    
+    margin-left: auto;
+
     @media screen and (max-width: 767px) {
         display: none;
     }
 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 } 
 
 .contact__mail {

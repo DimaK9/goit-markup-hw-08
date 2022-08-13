@@ -1,5 +1,18 @@
 .social-networks {
-    margin-left: 70px;
+    display: inline-block;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    
+    @media screen and(min-width: $tablet){
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+        margin-top: 0;
+    }
 
     &__title {
 
