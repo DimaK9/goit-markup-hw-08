@@ -16,38 +16,7 @@
     background-color: var(--acent-color);
 }
 
-.gallery__btn {
-    max-width: 145px;
-    min-width: 73px;
-    min-height: 38px;
-    padding: 6px 22px;
 
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    cursor: pointer;
-    background-color: #F5F4FA;
-    color: #212121;
-    border-radius: 4px;
-    border: 0 solid #F5F4FA;
-
-    transition-property: color, background-color,  box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-
-    &:hover,
-    &:focus {
-    background-color: var(--acent-color);
-    color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-    &.active-btn {
-    background-color: var(--acent-color);
-    color: #ffffff;
-}
-}
 .modal-btn {
     position: absolute;
     top: 8px;

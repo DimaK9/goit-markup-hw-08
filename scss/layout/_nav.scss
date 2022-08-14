@@ -11,7 +11,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
+
 
     &__item {
         margin-right: 50px;
@@ -21,6 +23,7 @@
         }
     }
 }
+
 .nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
