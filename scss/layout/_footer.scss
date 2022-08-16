@@ -11,6 +11,7 @@
 .footer-container {
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
@@ -26,8 +27,8 @@
 }
 
 .footer__logo {
+    margin: 0;
     margin-bottom: 20px;
-
 }
 
 .footer-contacts__link {

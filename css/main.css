@@ -54,10 +54,6 @@ p {
   margin: 0;
 }
 
-img {
-  display: block;
-}
-
 .list {
   list-style: none;
   text-decoration: none;
@@ -1025,9 +1021,9 @@ img {
   color: var(--acent-color);
 }
 
-.social-networks {
+/* .social-networks {
   margin-left: 70px;
-}
+} */
 .social-networks__title {
   display: inline-block;
   margin-bottom: 20px;
@@ -1082,16 +1078,21 @@ img {
 .input-form {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-}
-.input-form__lable {
-  gap: 40px;
-}
 
-.subscribe {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
 }
+  
+  /* display: flex;
+  gap: 12px; */
+}
+/* .input-form__lable {
+  gap: 40px;
+} */
+
+/* .subscribe {
+  margin-left: 93px;
+} */
 .subscribe__title {
   margin-bottom: 20px;
   font-size: 14px;
