@@ -54,12 +54,21 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 .list {
   list-style: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
+
 
 .section {
   padding: 94px 0;
@@ -1021,9 +1030,12 @@ p {
   color: var(--acent-color);
 }
 
-/* .social-networks {
-  margin-left: 70px;
-} */
+.social-networks {
+
+  @media screen and (min-width: 1200px) {
+  margin-left: 70px;}
+}
+
 .social-networks__title {
   display: inline-block;
   margin-bottom: 20px;
